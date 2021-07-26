@@ -243,7 +243,10 @@ function App() {
               <table className="tb">
                 <tr>
                   <th className="list-with-button">
-                    <div className="check-box" />
+                    <div
+                      className={`check-box ${selectedTable.length === 5 ? "checked3" : ""}`}
+                      onClick={() => selectedTable.length === 5 ? setSelectedTable([]) : setSelectedTable(dataTable)}
+                    />
                     <div className="space" />
                     Name
                   </th>
