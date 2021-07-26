@@ -119,6 +119,7 @@ function App() {
   const deleteTable = () => {
     if (selectedTable.length > 0) {
       setDataTable([])
+      setSelectedTable([])
     }
   }
 
